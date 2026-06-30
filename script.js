@@ -7,9 +7,11 @@ function toggleTheme() {
   if (root.classList.contains('light-mode')) {
     root.classList.remove('light-mode');
     btn.textContent = '[ LIGHT ]';
+    localStorage.setItem('theme', 'dark');
   } else {
     root.classList.add('light-mode');
     btn.textContent = '[ DARK ]';
+    localStorage.setItem('theme', 'light');
   }
 }
 
@@ -36,4 +38,11 @@ function displayPageInfo() {
 
 document.addEventListener('DOMContentLoaded', function() {
   displayPageInfo();
+  
+  var savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    setLightMode();
+  } else if (savedTheme === 'dark') {
+    setDarkMode();
+  }
 });
