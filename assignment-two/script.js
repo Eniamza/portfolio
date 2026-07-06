@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTasks();
 
     addBtn.addEventListener('click', addTask);
-    
+
     taskInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             addTask();
@@ -53,15 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderTasks() {
-        // Clear current list
         taskList.innerHTML = '';
-        
-        // Sort tasks: pending first, completed last
+
+        // pending then completed
         const sortedTasks = [
             ...tasks.filter(t => !t.completed),
             ...tasks.filter(t => t.completed)
         ];
-        
+
         // Render each task
         sortedTasks.forEach(task => {
             const li = document.createElement('li');
