@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hokus Fokus - To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="fortune.css">
+</head>
+
+<body>
+    <div class="hero-landing">
+        <h1>Hokus Fokus</h1>
+        <h2>A serene hub for you</h2>
+    </div>
+
+    <!-- To-Do List -->
+    <div class="container">
+        <input type="text" id="task-input" placeholder="What needs to be done?">
+        <button id="add-btn">Add</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Stopwatch -->
+    <div class="stopwatch-container">
+        <h3 class="stopwatch-title">Stopwatch</h3>
+        <div id="stopwatch-display">0</div>
+        <p class="stopwatch-label">seconds</p>
+        <div class="stopwatch-buttons">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <!-- Fortune Generator -->
+    <div class="fortune-section">
+        <div id="fortune-box">
+            <p id="fortune-text"></p>
+        </div>
+        <div class="fortune-buttons">
+            <button class="fortune-btn" id="btn-theme-1"></button>
+            <button class="fortune-btn" id="btn-theme-2"></button>
+            <button class="fortune-btn" id="btn-theme-3"></button>
+            <button class="fortune-btn" id="btn-theme-4"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="stopwatch.js"></script>
+    <script src="fortune.js"></script>
+</body>
+
+</html>

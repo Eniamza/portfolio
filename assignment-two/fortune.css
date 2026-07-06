@@ -1,0 +1,65 @@
+/* Fortune Generator */
+.fortune-section {
+    width: 90%;
+    max-width: 750px;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+#fortune-box {
+    background-color: #fffbe6;
+    border: 3px solid #5E8B7E;
+    border-radius: 10px;
+    padding: 1.25rem 2rem;
+    flex: 1;
+    text-align: center;
+}
+
+#fortune-text {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: #4a5568;
+}
+
+.fortune-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.fortune-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fortune-btn:hover {
+    transform: scale(1.1);
+}
+
+#btn-theme-1 {
+    background-color: #fef9e7;
+    border-color: #8e44ad;
+}
+
+#btn-theme-2 {
+    background-color: #fdebd0;
+    border-color: #16a085;
+}
+
+#btn-theme-3 {
+    background-color: #ebf5fb;
+    border-color: #d4a017;
+}
+
+#btn-theme-4 {
+    background-color: #e8f5e9;
+    border-color: #e74c3c;
+}
