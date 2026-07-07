@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        startBtn.innerText = 'Running...';
+
         // Every 1 real second, add 3 to the display
         intervalId = setInterval(() => {
             seconds = seconds + 3;
@@ -31,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (intervalId !== null) {
             clearInterval(intervalId);
             intervalId = null;
+            startBtn.innerText = 'Start';
         }
     });
 
@@ -39,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         intervalId = null;
         seconds = 0;
         display.textContent = seconds;
+        startBtn.innerText = 'Start';
     });
 
 });
